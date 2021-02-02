@@ -1,0 +1,28 @@
+{
+	"d": {
+		"__metadata": {
+			"id": "MenuSet(2L)",
+			"uri": "MenuSet(2L)"
+		},
+		"Bookings": {
+			"__deferred": {
+				"uri": "MenuSet(2L)/Bookings"
+			}
+		},
+		"CanteenID": "2",
+		"Dessert": null,
+		"MainDish": "Currywurst",
+		"MenuID": "2",
+		"Price": "6.98",
+		"Sides": "French Fries",
+		"Soup": null,
+		"dateOfLunch": "/Date(1555059154398)/",
+		"inCanteen": {
+			"__deferred": {
+				"uri": "MenuSet(2L)/inCanteen"
+			}
+		},
+		"kcalForMain": 434,
+		"veggie": true
+	}
+}

@@ -1,0 +1,86 @@
+{
+	"Name": "My Lunch Menu",
+	"Version": "1.0",
+	"Connection": "com.sap.mobile.platform.cards",
+	"Descriptions": [],
+	"GatekeeperConfiguration": null,
+	"SortCardsWith": null,
+	"RefreshInterval": null,
+	"CustomType": "Query",
+	"QueryInterval": "P1D",
+	"AppLaunchUrl": "",
+	"UrlMatch": null,
+	"QueryURL": "https://canteenservice200.cfapps.eu10.hana.ondemand.com/MenuSet",
+	"QueryConfiguration": {
+		"QueryURLCollectionRoot": "$.d.results",
+		"QueryEntityKeyPaths": [
+			"$.d.__metadata.uri"
+		],
+		"EntityRootElement": "d",
+		"CacheQueryResult": false
+	},
+	"QueryReturnsEntityCollection": true,
+	"NewsEnabled": false,
+	"AutoSubscribe": false,
+	"HiddenSubscription": false,
+	"SubscriptionParameters": [],
+	"ResourceIdentifiers": [
+		{
+			"ImagePaths": null,
+			"Order": 0,
+			"Shared": false,
+			"Uri": ""
+		}
+	],
+	"Parameters": {
+		"Parameters": [
+			{
+				"Name": "mID",
+				"Propagate": true,
+				"ResourceOrderNumber": 0,
+				"Value": "$.d.MenuID"
+			}
+		]
+	},
+	"APNSEnabled": true,
+	"NotificationMessages": {
+		"Messages": []
+	},
+	"NotificationRules": [],
+	"ActionConfiguration": {
+		"Actions": [
+			{
+				"ActionBody": "",
+				"ActionHeaders": [
+					{
+						"HeaderName": "X-Requested-With",
+						"HeaderValue": "XMLHttpRequest"
+					}
+				],
+				"ActionName": "BookMenu",
+				"ActionParameters": [],
+				"ActionUrl": "/Com_opensap_mobile_canteenService.BookLunch?MenuID=${mID}&UserID='${userId}'",
+				"BehaviorAfterAction": "DELETE",
+				"EnabledForDeviceNotification": true,
+				"HttpMethod": "GET",
+				"Nature": "Neutral",
+				"Labels": [
+					{
+						"language": "EN",
+						"text": "Book"
+					}
+				]
+			}
+		],
+		"XCSRFTokenUrl": ""
+	},
+	"CustomRequestProperties": null,
+	"CardClass": "HtmlTemplate",
+	"HighAvailability": false,
+	"SAPClientId": null,
+	"SiteId": null,
+	"SubscribableTo": {
+		"Users": []
+	},
+	"SupportSharedSubscriptions": false
+}

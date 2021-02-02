@@ -1,0 +1,9 @@
+{
+	"Service": "/ChefsDelight/Services/canteenService.service",
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnSuccess": "/ChefsDelight/Actions/Service/DownloadStartedMessage.action",
+	"OnFailure": "/ChefsDelight/Actions/Service/SyncFailureMessage.action"
+}

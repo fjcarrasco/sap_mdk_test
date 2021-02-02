@@ -1,0 +1,88 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/ChefsDelight/Actions/CanteenSet/NavToCanteenSet_Edit.action",
+				"Position": "right",
+				"SystemItem": "Edit"
+			},
+			{
+				"IsIconCircular": false,
+				"OnPress": "/ChefsDelight/Rules/CanteenSet/CanteenSet_DeleteConfirmation.js",
+				"Position": "right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Caption": "CanteenSet Details",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Description": "{Location}",
+						"HeadlineText": "{CanteenID}",
+						"Subhead": "{Name}",
+						"Tags": [
+						]
+					},
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"DataPaging": {
+						"PageSize": 50,
+						"ShowLoadingIndicator": false
+					},
+					"DataSubscriptions": [
+						"MenuSet"
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"HighlightSelectedItem": false,
+					"ObjectCell": {
+						"AccessoryType": "none",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"DetailImageIsCircular": false,
+						"Footnote": "{Soup}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{kcalForMain}",
+						"Subhead": "{Sides}",
+						"SubstatusText": "{Price}",
+						"Title": "{MainDish}"
+					},
+					"Target": {
+						"EntitySet": "{{#Property:@odata.readLink}}/serveMenus",
+						"Service": "/ChefsDelight/Services/canteenService.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"ToolBar": {
+		"Controls": [
+			{
+				"Caption": "Add Menu",
+				"Clickable": true,
+				"Enabled": true,
+				"OnPress": "/ChefsDelight/Actions/NavToMenuSet_Create.action",
+				"Visible": true,
+				"_Name": "ToolbarItem0",
+				"_Type": "Control.Type.ToolbarItem"
+			}
+		]
+	},
+	"_Name": "CanteenSet_Detail",
+	"_Type": "Page"
+}

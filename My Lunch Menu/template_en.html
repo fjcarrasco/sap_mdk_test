@@ -1,0 +1,112 @@
+<div><div><body>
+    <div id="mySimpleTemplate" class="myTemplate"
+data-type="text/x-handlebars-template">
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <div class="wrap">
+            <div class="header" >
+                <div style="text-align: left;">
+                    <h1>
+                    Your Menu in WDF01
+                    </h1>
+                </div>
+
+                <!--The div style below is an example of how to include some additional fields in the title/header part that are aligned right-->
+                 <div class="additional">
+                     <span class="additional1">
+                        SAP Cloud Platform
+                    </span>
+                    <span class="additional2">
+                       openSAP
+                    </span>
+                </div>
+            </div>
+            
+            
+            <div class="card-content">
+                <!-- the <hr> creates an example horizontal line at the beginning of card body directly below the header. It can be removed but this horizontal line shows how the header CSS padding is working -->
+                
+                <div class="set">
+                    <span class="label">
+                        Main:
+                    </span><br>
+                    <span class="dish">
+                        <span id='handlebar-tag-0' handlebarid='handlebar-tag-0])' style='display:inline-block;min-width:15px;min-height:15px;'>{{d.MainDish}}</span>
+                    </span>
+                </div>    
+
+                <div class="set">
+                    <span class="label">Sides: </span><br>
+                    <span class="dish">
+                    <span id='handlebar-tag-1' handlebarid='handlebar-tag-1])' style='display:inline-block;min-width:15px;min-height:15px;'>{{d.Sides}}</span>
+                    </span>
+                </div>
+
+                <div class="set">
+                    <span class="label">Soup: </span>
+                    <br>
+                    <span class="dish">
+                    <span id='handlebar-tag-2' handlebarid='handlebar-tag-2])' style='display:inline-block;min-width:15px;min-height:15px;'>{{d.Soup}}</span>
+                    </span>
+                </div> 
+
+                <div class="set">
+                    <span class="label">Dessert: </span>
+                    <br>
+                    <span class="dish">
+                    <span id='handlebar-tag-3' handlebarid='handlebar-tag-3])' style='display:inline-block;min-width:15px;min-height:15px;'>{{d.Dessert}}</span>
+                    </span>
+                </div>
+
+                <div class="set">
+                    <span class="label">kCal: </span>
+                    <br>
+                    <span class="dish">
+                    <span id='handlebar-tag-4' handlebarid='handlebar-tag-4])' style='display:inline-block;min-width:15px;min-height:15px;'>{{d.kcalForMain}}</span>
+                    </span>
+                </div>
+
+                <div class="set">
+                    <span class="label">Veggie: </span>
+                    <br>
+                    <span class="dish">
+                    <span id='handlebar-tag-5' handlebarid='handlebar-tag-5])' style='display:inline-block;min-width:15px;min-height:15px;'>{{d.veggie}}</span>
+                    </span>
+                </div>
+
+                <div class="set">
+                    <span class="label">Price: </span>
+                    <br>
+                    <span class="dish">
+                    <span id='handlebar-tag-6' handlebarid='handlebar-tag-6])' style='display:inline-block;min-width:15px;min-height:15px;'>{{d.Price}}</span> $
+                    </span>
+                </div>  
+
+               <div class="set">
+                    <span class="label">Menu ID: </span>
+                    <br>
+                    <span class="dish">
+                    <span id='handlebar-tag-7' handlebarid='handlebar-tag-7])' style='display:inline-block;min-width:15px;min-height:15px;'>{{d.MenuID}}</span>
+                    </span>
+                </div> 
+
+
+                <!--by adding a class reference like the ones specified below add an action to the arrow item in the bottom left hand side of the card. Supported items are c2g_phonenumber; c2g_email; c2g_website; c2g_address;-->
+           
+
+            </div>
+             
+  
+        
+            <!--<div class="footer">
+                            <div class="footer-content">
+                                
+                                <h4>
+                                    powered by
+                                </h4>
+                                <img src="sapcp.png" alt="" height="25px" style="padding-top: 14px;">
+                            </div>
+            </div>-->
+        </div>
+    </div>
+</body>
+</div></div>

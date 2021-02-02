@@ -1,0 +1,48 @@
+{
+	"Caption": "Error List",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"DataPaging": {
+						"PageSize": 50,
+						"ShowLoadingIndicator": false
+					},
+					"EmptySection": {
+						"Caption": "No Sync Errors Found",
+						"FooterVisible": false
+					},
+					"HighlightSelectedItem": false,
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"DetailImageIsCircular": false,
+						"OnPress": "/ChefsDelight/Actions/NavToErrDetail.action",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{RequestMethod}",
+						"Subhead": "{RequestURL}",
+						"Title": "{HTTPStatusCode}"
+					},
+					"Search": {
+						"Enabled": true
+					},
+					"Target": {
+						"EntitySet": "ErrorArchive",
+						"Service": "/ChefsDelight/Services/canteenService.service"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectTable0",
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "ErrorList",
+	"_Type": "Page"
+}

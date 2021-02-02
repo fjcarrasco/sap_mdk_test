@@ -1,0 +1,54 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/BlogMDKDemoApp/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/BlogMDKDemoApp/Actions/BookingSet/BookingSet_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Booking",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "BookingDate",
+		"_Name": "BookingDate",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "BookingID",
+		"_Name": "BookingID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "MenuID",
+		"_Name": "MenuID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Price",
+		"_Name": "Price",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Status",
+		"_Name": "Status",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "User",
+		"_Name": "User",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "BookingSet_Create"
+}

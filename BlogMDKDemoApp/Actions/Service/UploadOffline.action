@@ -1,0 +1,9 @@
+{
+	"Service": "/BlogMDKDemoApp/Services/openSAPNewService.service",
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnSuccess": "/BlogMDKDemoApp/Actions/Service/DownloadStartedMessage.action",
+	"OnFailure": "/BlogMDKDemoApp/Actions/Service/SyncFailureMessage.action"
+}

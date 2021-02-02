@@ -1,0 +1,61 @@
+{
+	"Caption": "Update Booking",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/BlogMDKDemoApp/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/BlogMDKDemoApp/Actions/BookingSet/BookingSet_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "BookingDate",
+		"_Name": "BookingDate",
+		"Value": "{BookingDate}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "BookingID",
+		"_Name": "BookingID",
+		"Value": "{BookingID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "MenuID",
+		"_Name": "MenuID",
+		"Value": "{MenuID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Price",
+		"_Name": "Price",
+		"Value": "{Price}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Status",
+		"_Name": "Status",
+		"Value": "{Status}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "User",
+		"_Name": "User",
+		"Value": "{User}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "BookingSet_Edit"
+}

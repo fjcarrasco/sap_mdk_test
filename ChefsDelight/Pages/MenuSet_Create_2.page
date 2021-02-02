@@ -1,0 +1,87 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/ChefsDelight/Actions/CloseModalPage_Cancel.action",
+				"Position": "left",
+				"SystemItem": "Cancel",
+				"Text": "Item",
+				"Visible": true
+			},
+			{
+				"IsIconCircular": false,
+				"OnPress": "/ChefsDelight/Actions/CreateMenu.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Create Menu",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Main Dish",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter Value",
+							"_Name": "FCMainDish",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Price",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter Value",
+							"_Name": "FCPrice",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "KCal",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter Value",
+							"_Name": "FCKcal",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Sides",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter Value",
+							"_Name": "FcSides",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Soup",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "Enter Value",
+							"_Name": "FCSoup",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Date of Lunch",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Mode": "date",
+							"Value": "Enter Date",
+							"_Name": "FCDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"_Name": "MenuSet_Create_2",
+	"_Type": "Page"
+}

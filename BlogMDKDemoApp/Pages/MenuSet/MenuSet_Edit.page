@@ -1,0 +1,91 @@
+{
+	"Caption": "Update Menu",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/BlogMDKDemoApp/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/BlogMDKDemoApp/Actions/MenuSet/MenuSet_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "BookingID",
+		"_Name": "BookingID",
+		"Value": "{BookingID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CanteenID",
+		"_Name": "CanteenID",
+		"Value": "{CanteenID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Dessert",
+		"_Name": "Dessert",
+		"Value": "{Dessert}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "MainDish",
+		"_Name": "MainDish",
+		"Value": "{MainDish}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "MenuID",
+		"_Name": "MenuID",
+		"Value": "{MenuID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Price",
+		"_Name": "Price",
+		"Value": "{Price}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Sides",
+		"_Name": "Sides",
+		"Value": "{Sides}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Soup",
+		"_Name": "Soup",
+		"Value": "{Soup}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "dateOfLunch",
+		"_Name": "dateOfLunch",
+		"Value": "{dateOfLunch}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "kcalForMain",
+		"_Name": "kcalForMain",
+		"Value": "{kcalForMain}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"_Name": "veggie",
+		"Caption": "veggie",
+		"Value": "{veggie}",
+		"_Type": "Control.Type.FormCell.Switch"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "MenuSet_Edit"
+}

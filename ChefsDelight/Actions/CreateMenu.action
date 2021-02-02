@@ -1,0 +1,28 @@
+{
+	"CreateLinks": [
+		{
+			"Property": "inCanteen",
+			"Target": {
+				"EntitySet": "CanteenSet",
+				"ReadLink": "{{#Page:-Previous/#Property:@odata.readLink}}"
+			},
+			"_Enabled": true
+		}
+	],
+	"OnFailure": "/ChefsDelight/Actions/CreateMenuFailure.action",
+	"OnSuccess": "/ChefsDelight/Actions/CloseModalPage_Complete.action",
+	"Properties": {
+		"MainDish": "#Control:FCMainDish/#Value",
+		"Price": "#Control:FCPrice/#Value",
+		"Sides": "#Control:FcSides/#Value",
+		"Soup": "#Control:FCSoup/#Value",
+		"dateOfLunch": "#Control:FCDate/#Value",
+		"kcalForMain": "#Control:FCKcal/#Value"
+	},
+	"Target": {
+		"EntitySet": "MenuSet",
+		"Service": "/ChefsDelight/Services/canteenService.service"
+	},
+	"ValidationRule": "/ChefsDelight/Rules/InputValidation.js",
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

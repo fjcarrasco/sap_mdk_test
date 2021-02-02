@@ -1,0 +1,28 @@
+[
+    {
+        "BookingID": "1234567890123",
+        "CanteenID": "1234567890123",
+        "Dessert": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "MainDish": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "MenuID": "201",
+        "Price": "12345678.12",
+        "Sides": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "Soup": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "dateOfLunch": "2021-01-29T10:55:30.655Z",
+        "kcalForMain": 123,
+        "veggie": false
+    },
+    {
+        "BookingID": "9876543210987",
+        "CanteenID": "9876543210987",
+        "Dessert": null,
+        "MainDish": "XYZ",
+        "MenuID": "202",
+        "Price": "98765432.98",
+        "Sides": null,
+        "Soup": null,
+        "dateOfLunch": "2021-01-29T10:55:30.655Z",
+        "kcalForMain": null,
+        "veggie": null
+    }
+]

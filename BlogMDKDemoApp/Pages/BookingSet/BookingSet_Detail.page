@@ -1,0 +1,70 @@
+{
+	"Caption": "BookingSet Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/BlogMDKDemoApp/Actions/BookingSet/NavToBookingSet_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/BlogMDKDemoApp/Rules/BookingSet/BookingSet_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{BookingDate}",
+				"Subhead": "{MenuID}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{Price}",
+				"Description": "{BookingID}",
+				"StatusText": "{Status}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{User}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "BookingDate",
+		"Value": "{BookingDate}"
+	},
+	{
+		"KeyName": "BookingID",
+		"Value": "{BookingID}"
+	},
+	{
+		"KeyName": "MenuID",
+		"Value": "{MenuID}"
+	},
+	{
+		"KeyName": "Price",
+		"Value": "{Price}"
+	},
+	{
+		"KeyName": "Status",
+		"Value": "{Status}"
+	},
+	{
+		"KeyName": "User",
+		"Value": "{User}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "BookingSet_Detail"
+}

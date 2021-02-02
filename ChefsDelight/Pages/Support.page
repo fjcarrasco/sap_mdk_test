@@ -1,0 +1,89 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/ChefsDelight/Actions/CloseModalPage_Complete.action",
+				"Position": "left",
+				"SystemItem": "Done",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Support",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"BodyText": "#Application/#ClientData/#Property:DeviceId",
+						"DetailImageIsCircular": false,
+						"Footnote": "/ChefsDelight/Globals/AppDefinition_Version.global",
+						"Subhead": "#Application/#ClientData/#Property:UserId"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"ContactCell": {
+						"ActivityItems": [
+							{
+								"ActivityType": "VideoCall",
+								"ActivityValue": "000-000-0000"
+							},
+							{
+								"ActivityType": "Email",
+								"ActivityValue": "sample@sap.com"
+							},
+							{
+								"ActivityType": "Detail",
+								"ActivityValue": "This is an alert"
+							}
+						],
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Description": "Description",
+						"DetailImage": "res://contact.png",
+						"Headline": "Headline",
+						"Subheadline": "Subheadline"
+					},
+					"DataPaging": {
+						"PageSize": 50,
+						"ShowLoadingIndicator": false
+					},
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Visible": true,
+					"_Name": "SectionContactCellTable0",
+					"_Type": "Section.Type.ContactCell"
+				},
+				{
+					"Buttons": [
+						{
+							"OnPress": "/ChefsDelight/Actions/NavToErrList.action",
+							"TextAlignment": "center",
+							"Title": "Show Errors",
+							"Visible": true
+						}
+					],
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Visible": true,
+					"_Name": "SectionButtonTable0",
+					"_Type": "Section.Type.ButtonTable"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Support",
+	"_Type": "Page"
+}

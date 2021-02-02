@@ -1,0 +1,17 @@
+{
+	"OnSuccess": "/ChefsDelight/Actions/CloseModalPage_Complete.action",
+	"Properties": {
+		"MainDish": "#Control:FCEditMainDish/#Value",
+		"Price": "#Control:FCEditPrice/#Value",
+		"Sides": "#Control:FCEditSides/#Value",
+		"Soup": "#Control:FCEditSoup/#Value",
+		"dateOfLunch": "#Control:FCEditDate/#Value",
+		"kcalForMain": "#Control:FCEditKcal/#Value"
+	},
+	"Target": {
+		"EntitySet": "MenuSet",
+		"ReadLink": "{@odata.readLink}",
+		"Service": "/ChefsDelight/Services/canteenService.service"
+	},
+	"_Type": "Action.Type.ODataService.UpdateEntity"
+}

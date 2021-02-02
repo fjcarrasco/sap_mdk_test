@@ -1,0 +1,151 @@
+.myTemplate {
+    background-color: #d3dae0;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: 415px auto;
+    background-attachment: fixed;
+    color: #333333;
+    font-family: -apple-system, Helvetica;
+    height: 100vh;
+    /*The linear-gradient background provides a nice background with slight color transistion from upper-right to bottom left. We also recommend Helvetica or Arial for the broadest range of font-weight property support. Another example could be background: linear-gradient(to bottom right,#589CCE,#226596);*/
+}
+
+.header {
+    display: flex;
+    padding: 1rem;
+    height: 3rem;
+    /*Padding the header's title area of the card with 1REM or 16px gives the header details room to breathe on all four sides. Helpful to accomodate many mobile screen sizes*/
+    margin-bottom: 1rem;
+}
+
+.header img {
+    margin-right: 0.5rem;
+}
+
+.header h1 {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    color: #333333;
+    font-weight: bold;
+    flex: 1 1;
+    line-height: 2.5rem;
+    white-space: nowrap;
+    /*We recommend that the header title font size of 1.25rem or 20px and tends to fit on a single line around 24 characters. Single line titles display best when in the card deck view. If you are including an image in header than consider 20px*/
+}
+
+.header .name {
+    font-weight: normal;
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    display: block;
+    text-align: right;
+    white-space: normal;
+}
+
+.header .additional {
+    position: absolute;
+    right: 16px;
+    color: #fafafa;
+    text-align: right;
+    margin-left: 1rem;
+}
+
+.header .additional1 {
+    font-size: 0.75rem;
+    display: block;
+    text-align: right;
+    line-height: 0.5rem;
+    padding-top: 0.5rem;
+    color: #666;
+}
+
+.header .additional2 {
+    font-size: 0.875rem;
+    display: block;
+    text-align: right;
+    padding-top: 0.5rem;
+    color: #666;
+}
+
+.card-content {
+    margin-bottom: 2rem;
+}
+
+.card-content .set {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-content .label {
+    display: flex;
+    color: #646C69;
+    font-size: 0.875rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
+.card-content .dish {
+    padding: 1rem;
+    color: #333;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    line-height: 1rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+}
+
+.table .table-data-items {
+    height: 2rem;
+}
+
+.table tr:nth-child(even) {
+    background-color: rgba(243, 241, 240, 0.5);
+}
+
+.table .table-title {
+    text-align: left;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+.table .table-content {
+    text-align: right;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+.contain-allergens {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.contain-allergens img {
+    height: 2rem;
+}
+
+.contain-allergens .allergens-data-items {
+    height: 2rem;
+}
+
+.contain-allergens tr:nth-child(odd) {
+    background-color: rgba(243, 241, 240, 0.5);
+}
+
+.contain-allergens .allergens-title {
+    text-align: left;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+.contain-allergens .allergens-content {
+    text-align: right;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+}

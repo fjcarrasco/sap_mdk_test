@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/BlogMDKDemoApp/Pages/CanteenSet/CanteenSet_Edit.page",
+	"_Type": "Action.Type.Navigation"
+}

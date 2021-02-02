@@ -1,0 +1,18 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/ChefsDelight/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/ChefsDelight/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"CanteenID": "#Control:CanteenID/#Value",
+	"Location": "#Control:Location/#Value",
+	"Name": "#Control:Name/#Value"
+},
+	"Target": {
+		"EntitySet": "CanteenSet",
+		"Service": "/ChefsDelight/Services/canteenService.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

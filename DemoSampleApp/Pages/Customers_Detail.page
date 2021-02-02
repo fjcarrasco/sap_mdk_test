@@ -1,0 +1,82 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/DemoSampleApp/Actions/NavToCustomers_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"Text": "Item",
+				"Visible": true
+			},
+			{
+				"IsIconCircular": false,
+				"OnPress": "/DemoSampleApp/Rules/Customers_DeleteConfirmation.js",
+				"Position": "right",
+				"SystemItem": "Trash",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "Customers Detail",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"BodyText": "{DateOfBirth}",
+						"Description": "{CustomerId}",
+						"DetailImage": "sap-icon://customer",
+						"DetailImageIsCircular": false,
+						"Footnote": "{EmailAddress}",
+						"HeadlineText": "{LastName}",
+						"StatusText": "{PhoneNumber}",
+						"Subhead": "{FirstName}"
+					},
+					"Visible": true,
+					"_Name": "SectionObjectHeader0",
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"KeyName": "Address",
+							"Value": "{{#Property:HouseNumber}} {Street}",
+							"Visible": true
+						},
+						{
+							"KeyName": "City",
+							"Value": "{{#Property:City}}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Postal Code",
+							"Value": "{{#Property:PostalCode}}",
+							"Visible": true
+						},
+						{
+							"KeyName": "Country",
+							"Value": "{{#Property:Country}}",
+							"Visible": true
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"Visible": true,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Name": "Customers_Detail",
+	"_Type": "Page"
+}

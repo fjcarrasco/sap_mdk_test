@@ -1,0 +1,11 @@
+---
+applications:
+  - buildpack: sap_java_buildpack
+    name: openSAPNew123
+    path: target/odata-service-1.0.0.war
+    env:    
+      JDBC_DEFAULT_DB: sampleDB
+      SET_LOGGING_LEVEL: '{odata: TRACE, sap.xs.console: TRACE, sap.xs.odata: TRACE}'
+      TARGET_RUNTIME: tomee7
+    services:    
+      - sampleDB

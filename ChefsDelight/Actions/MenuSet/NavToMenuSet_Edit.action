@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/ChefsDelight/Pages/MenuSet/MenuSet_Edit.page",
+	"_Type": "Action.Type.Navigation"
+}

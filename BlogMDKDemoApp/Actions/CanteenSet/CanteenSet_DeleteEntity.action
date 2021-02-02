@@ -1,0 +1,13 @@
+{
+	"Target": {
+		"EntitySet": "CanteenSet",
+		"Service": "/BlogMDKDemoApp/Services/openSAPNewService.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"OnSuccess": "/BlogMDKDemoApp/Actions/DeleteEntitySuccessMessage.action",
+	"OnFailure": "/BlogMDKDemoApp/Actions/DeleteEntityFailureMessage.action",
+	"ActionResult": {
+		"_Name": "delete"
+	},
+	"_Type": "Action.Type.ODataService.DeleteEntity"
+}

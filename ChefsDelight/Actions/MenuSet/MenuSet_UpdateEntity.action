@@ -1,0 +1,27 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "MenuSet",
+		"Service": "/ChefsDelight/Services/canteenService.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"BookingID": "#Control:BookingID/#Value",
+	"CanteenID": "#Control:CanteenID/#Value",
+	"Dessert": "#Control:Dessert/#Value",
+	"MainDish": "#Control:MainDish/#Value",
+	"MenuID": "#Control:MenuID/#Value",
+	"Price": "#Control:Price/#Value",
+	"Sides": "#Control:Sides/#Value",
+	"Soup": "#Control:Soup/#Value",
+	"dateOfLunch": "#Control:dateOfLunch/#Value",
+	"kcalForMain": "#Control:kcalForMain/#Value",
+	"veggie": "#Control:veggie/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/ChefsDelight/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/ChefsDelight/Actions/UpdateEntityFailureMessage.action"
+}

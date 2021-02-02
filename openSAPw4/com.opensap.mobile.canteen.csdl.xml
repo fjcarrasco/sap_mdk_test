@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:edmx4="http://docs.oasis-open.org/odata/ns/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+    <edmx4:Reference Uri="vocabularies/com.sap.cloud.server.odata.sql.v1.xml">
+        <edmx4:Include Namespace="com.sap.cloud.server.odata.sql.v1" Alias="SQL"/>
+    </edmx4:Reference>
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="com.opensap.mobile.canteen" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="Booking">
+                <Key>
+                    <PropertyRef Name="BookingID"/>
+                </Key>
+                <Property Name="BookingDate" Type="Edm.DateTimeOffset" Nullable="false"/>
+                <Property Name="BookingID" Type="Edm.Int64" Nullable="false"/>
+                <Property Name="MenuID" Type="Edm.Int64" Nullable="false"/>
+                <Property Name="Price" Type="Edm.Decimal" Nullable="false" Precision="10" Scale="2"/>
+                <Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="20"/>
+                <Property Name="User" Type="Edm.String" Nullable="false" MaxLength="100"/>
+                <NavigationProperty Name="MenuBooked" Relationship="com.opensap.mobile.canteen.Booking_to_MenuBooked" FromRole="BookingDependent" ToRole="MenuPrincipal"/>
+            </EntityType>
+            <EntityType Name="Canteen">
+                <Key>
+                    <PropertyRef Name="CanteenID"/>
+                </Key>
+                <Property Name="CanteenID" Type="Edm.Int64" Nullable="false"/>
+                <Property Name="Location" Type="Edm.String" Nullable="false" MaxLength="100"/>
+                <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="100"/>
+                <NavigationProperty Name="serveMenus" Relationship="com.opensap.mobile.canteen.Menu_to_InCanteen" FromRole="CanteenPrincipal" ToRole="MenuDependent"/>
+            </EntityType>
+            <EntityType Name="Menu">
+                <Key>
+                    <PropertyRef Name="MenuID"/>
+                </Key>
+                <Property Name="BookingID" Type="Edm.Int64" Nullable="false"/>
+                <Property Name="CanteenID" Type="Edm.Int64" Nullable="false"/>
+                <Property Name="Dessert" Type="Edm.String" Nullable="true" MaxLength="100"/>
+                <Property Name="MainDish" Type="Edm.String" Nullable="false" MaxLength="100"/>
+                <Property Name="MenuID" Type="Edm.Int64" Nullable="false"/>
+                <Property Name="Price" Type="Edm.Decimal" Nullable="true" Precision="10" Scale="2"/>
+                <Property Name="Sides" Type="Edm.String" Nullable="true" MaxLength="100"/>
+                <Property Name="Soup" Type="Edm.String" Nullable="true" MaxLength="100"/>
+                <Property Name="dateOfLunch" Type="Edm.DateTimeOffset" Nullable="false"/>
+                <Property Name="kcalForMain" Type="Edm.Int32" Nullable="true"/>
+                <Property Name="veggie" Type="Edm.Boolean" Nullable="true"/>
+                <NavigationProperty Name="Bookings" Relationship="com.opensap.mobile.canteen.Booking_to_MenuBooked" FromRole="MenuPrincipal" ToRole="BookingDependent"/>
+                <NavigationProperty Name="inCanteen" Relationship="com.opensap.mobile.canteen.Menu_to_InCanteen" FromRole="MenuDependent" ToRole="CanteenPrincipal"/>
+            </EntityType>
+            <Association Name="Booking_to_MenuBooked">
+                <End Type="com.opensap.mobile.canteen.Booking" Multiplicity="*" Role="BookingDependent"/>
+                <End Type="com.opensap.mobile.canteen.Menu" Multiplicity="1" Role="MenuPrincipal"/>
+                <ReferentialConstraint>
+                    <Principal Role="MenuPrincipal">
+                        <PropertyRef Name="MenuID"/>
+                    </Principal>
+                    <Dependent Role="BookingDependent">
+                        <PropertyRef Name="MenuID"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="Menu_to_InCanteen">
+                <End Type="com.opensap.mobile.canteen.Menu" Multiplicity="*" Role="MenuDependent"/>
+                <End Type="com.opensap.mobile.canteen.Canteen" Multiplicity="1" Role="CanteenPrincipal"/>
+                <ReferentialConstraint>
+                    <Principal Role="CanteenPrincipal">
+                        <PropertyRef Name="CanteenID"/>
+                    </Principal>
+                    <Dependent Role="MenuDependent">
+                        <PropertyRef Name="CanteenID"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityContainer Name="CanteenService" m:IsDefaultEntityContainer="true">
+                <Annotation Term="SQL.TrackChanges" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
+                <EntitySet Name="BookingSet" EntityType="com.opensap.mobile.canteen.Booking"/>
+                <EntitySet Name="CanteenSet" EntityType="com.opensap.mobile.canteen.Canteen"/>
+                <EntitySet Name="MenuSet" EntityType="com.opensap.mobile.canteen.Menu"/>
+                <AssociationSet Name="BookingSet_to_MenuSet" Association="com.opensap.mobile.canteen.Booking_to_MenuBooked">
+                    <End EntitySet="BookingSet" Role="BookingDependent"/>
+                    <End EntitySet="MenuSet" Role="MenuPrincipal"/>
+                </AssociationSet>
+                <AssociationSet Name="MenuSet_to_CanteenSet" Association="com.opensap.mobile.canteen.Menu_to_InCanteen">
+                    <End EntitySet="MenuSet" Role="MenuDependent"/>
+                    <End EntitySet="CanteenSet" Role="CanteenPrincipal"/>
+                </AssociationSet>
+                <FunctionImport Name="BookLunch" m:HttpMethod="GET" ReturnType="Edm.Boolean">
+                    <Parameter Name="MenuID" Type="Edm.Int64" Nullable="false"/>
+                    <Parameter Name="UserID" Type="Edm.String" Nullable="false" MaxLength="100"/>
+                </FunctionImport>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

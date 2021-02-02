@@ -1,0 +1,90 @@
+{
+	"Caption": "MenuSet Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/BlogMDKDemoApp/Actions/MenuSet/NavToMenuSet_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/BlogMDKDemoApp/Rules/MenuSet/MenuSet_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{BookingID}",
+				"Subhead": "{Dessert}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{MainDish}",
+				"Description": "{CanteenID}",
+				"StatusText": "{MenuID}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{Price}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "BookingID",
+		"Value": "{BookingID}"
+	},
+	{
+		"KeyName": "CanteenID",
+		"Value": "{CanteenID}"
+	},
+	{
+		"KeyName": "Dessert",
+		"Value": "{Dessert}"
+	},
+	{
+		"KeyName": "MainDish",
+		"Value": "{MainDish}"
+	},
+	{
+		"KeyName": "MenuID",
+		"Value": "{MenuID}"
+	},
+	{
+		"KeyName": "Price",
+		"Value": "{Price}"
+	},
+	{
+		"KeyName": "Sides",
+		"Value": "{Sides}"
+	},
+	{
+		"KeyName": "Soup",
+		"Value": "{Soup}"
+	},
+	{
+		"KeyName": "dateOfLunch",
+		"Value": "{dateOfLunch}"
+	},
+	{
+		"KeyName": "kcalForMain",
+		"Value": "{kcalForMain}"
+	},
+	{
+		"KeyName": "veggie",
+		"Value": "{veggie}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "MenuSet_Detail"
+}

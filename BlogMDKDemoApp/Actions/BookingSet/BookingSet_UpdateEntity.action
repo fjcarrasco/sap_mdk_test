@@ -1,0 +1,22 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "BookingSet",
+		"Service": "/BlogMDKDemoApp/Services/openSAPNewService.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"BookingDate": "#Control:BookingDate/#Value",
+	"BookingID": "#Control:BookingID/#Value",
+	"MenuID": "#Control:MenuID/#Value",
+	"Price": "#Control:Price/#Value",
+	"Status": "#Control:Status/#Value",
+	"User": "#Control:User/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/BlogMDKDemoApp/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/BlogMDKDemoApp/Actions/UpdateEntityFailureMessage.action"
+}

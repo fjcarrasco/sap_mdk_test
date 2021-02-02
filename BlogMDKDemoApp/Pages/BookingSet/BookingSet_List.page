@@ -1,0 +1,50 @@
+{
+	"Caption": "BookingSet",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/BlogMDKDemoApp/Actions/BookingSet/NavToBookingSet_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{BookingID}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/BlogMDKDemoApp/Actions/BookingSet/NavToBookingSet_Detail.action",
+				"StatusImage": "",
+				"Title": "{BookingDate}",
+				"Footnote": "{Price}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{Status}",
+				"Subhead": "{MenuID}",
+				"SubstatusText": "{User}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "BookingSet",
+				"Service": "/BlogMDKDemoApp/Services/openSAPNewService.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "BookingSet_List"
+}

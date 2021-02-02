@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.OfflineOData.Close",
+	"Service": "/ChefsDelight/Services/canteenService.service",
+	"Force": true,
+	"ActionResult": {
+		"_Name": "close"
+	},
+	"OnSuccess": "/ChefsDelight/Actions/Service/CloseOfflineSuccessMessage.action",
+	"OnFailure": "/ChefsDelight/Actions/Service/CloseOfflineFailureMessage.action"
+}

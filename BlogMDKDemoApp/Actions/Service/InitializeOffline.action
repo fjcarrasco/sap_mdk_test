@@ -1,0 +1,25 @@
+{
+	"Service": "/BlogMDKDemoApp/Services/openSAPNewService.service",
+	"DefiningRequests": [
+	{
+		"Name": "BookingSet",
+		"Query": "BookingSet"
+	},
+	{
+		"Name": "CanteenSet",
+		"Query": "CanteenSet"
+	},
+	{
+		"Name": "MenuSet",
+		"Query": "MenuSet"
+	}
+],
+	"_Type": "Action.Type.ODataService.Initialize",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnSuccess": "/BlogMDKDemoApp/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"OnFailure": "/BlogMDKDemoApp/Actions/Service/InitializeOfflineFailureMessage.action"
+}

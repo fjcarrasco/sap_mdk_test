@@ -1,0 +1,22 @@
+{
+	"Service": "/BlogMDKDemoApp/Services/openSAPNewService.service",
+	"DefiningRequests": [
+	{
+		"Name": "BookingSet",
+		"Query": "BookingSet"
+	},
+	{
+		"Name": "CanteenSet",
+		"Query": "CanteenSet"
+	},
+	{
+		"Name": "MenuSet",
+		"Query": "MenuSet"
+	}
+],
+	"_Type": "Action.Type.OfflineOData.Download",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnFailure": "/BlogMDKDemoApp/Actions/Service/SyncFailureMessage.action"
+}

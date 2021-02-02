@@ -1,0 +1,8 @@
+{
+    "DestinationName": "com.sap.open.mobile",
+    "OfflineEnabled": true,
+    "LanguageURLParam": "sap-language",
+    "OnlineOptions": {},
+    "PathSuffix": "",
+    "SourceType": "Mobile"
+}

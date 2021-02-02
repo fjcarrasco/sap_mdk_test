@@ -1,0 +1,14 @@
+{
+    "mck.mobileservices": [
+        {
+            "name": "cf_default",
+            "url": "https://mobile-service-cockpit-web.cfapps.eu10.hana.ondemand.com/cockpit/v1/org/91eeffedtrial/space/dev",
+            "backends": [
+                "com.sap.edm.sampleservice.v2",
+                "com.sap.mobile.platform.cards"
+            ],
+            "gateKeepers": [],
+            "appServer": "https://91eeffedtrial-dev-com-sap-mobile-platform-cards.cfapps.eu10.hana.ondemand.com"
+        }
+    ]
+}

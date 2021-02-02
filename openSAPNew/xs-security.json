@@ -1,0 +1,28 @@
+{
+    "role-templates":
+    [
+        {
+            "description": "Service user role",
+            "name": "Everyone",
+            "scope-references": ["$XSAPPNAME.Everyone"]
+        },
+        {
+            "description": "Service administrator role",
+            "name": "ViewMetrics",
+            "scope-references": ["$XSAPPNAME.ViewMetrics"]
+        }
+    ],
+    "scopes":
+    [
+        {
+            "description": "Service user scope",
+            "name": "$XSAPPNAME.Everyone"
+        },
+        {
+            "description": "Service administrator scope",
+            "name": "$XSAPPNAME.ViewMetrics"
+        }
+    ],
+    "tenant-mode": "dedicated",
+    "xsappname": "openSAPNew123"
+}

@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "CanteenSet",
+		"Service": "/ChefsDelight/Services/canteenService.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"CanteenID": "#Control:CanteenID/#Value",
+	"Location": "#Control:Location/#Value",
+	"Name": "#Control:Name/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/ChefsDelight/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/ChefsDelight/Actions/UpdateEntityFailureMessage.action"
+}

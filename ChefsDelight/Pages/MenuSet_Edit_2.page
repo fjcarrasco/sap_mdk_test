@@ -1,0 +1,93 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"IsIconCircular": false,
+				"OnPress": "/ChefsDelight/Actions/CloseModalPage_Cancel.action",
+				"Position": "left",
+				"SystemItem": "Cancel",
+				"Text": "Item",
+				"Visible": true
+			},
+			{
+				"IsIconCircular": false,
+				"OnPress": "/ChefsDelight/Actions/MenuSet/MenuSet_UpdateEntity.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"Text": "Item",
+				"Visible": true
+			}
+		]
+	},
+	"Caption": "MenuSet Edit",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Caption": "Main Dish",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{MainDish}",
+							"_Name": "FCEditMainDish",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Price",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{Price}",
+							"_Name": "FCEditPrice",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "KCal",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{kcalForMain}",
+							"_Name": "FCEditKcal",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Sides",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{Sides}",
+							"_Name": "FCEditSides",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Soup",
+							"IsEditable": true,
+							"IsVisible": true,
+							"PlaceHolder": "PlaceHolder",
+							"Value": "{Soup}",
+							"_Name": "FCEditSoup",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Date of Lunch",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Mode": "date",
+							"Value": "{dateOfLunch}",
+							"_Name": "FCEditDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						}
+					],
+					"Visible": true
+				}
+			],
+			"_Name": "FormCellContainer0",
+			"_Type": "Control.Type.FormCellContainer"
+		}
+	],
+	"OnLoaded": "/ChefsDelight/Actions/MenuSet/MenuSet_UpdateEntity.action",
+	"_Name": "MenuSet_Edit_2",
+	"_Type": "Page"
+}

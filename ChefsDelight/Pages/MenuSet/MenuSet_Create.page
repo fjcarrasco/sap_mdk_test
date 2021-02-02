@@ -1,0 +1,79 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/ChefsDelight/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/ChefsDelight/Actions/MenuSet/MenuSet_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Menu",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "BookingID",
+		"_Name": "BookingID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CanteenID",
+		"_Name": "CanteenID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Dessert",
+		"_Name": "Dessert",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "MainDish",
+		"_Name": "MainDish",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "MenuID",
+		"_Name": "MenuID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Price",
+		"_Name": "Price",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Sides",
+		"_Name": "Sides",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Soup",
+		"_Name": "Soup",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "dateOfLunch",
+		"_Name": "dateOfLunch",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "kcalForMain",
+		"_Name": "kcalForMain",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"_Name": "veggie",
+		"Caption": "veggie",
+		"_Type": "Control.Type.FormCell.Switch"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "MenuSet_Create"
+}

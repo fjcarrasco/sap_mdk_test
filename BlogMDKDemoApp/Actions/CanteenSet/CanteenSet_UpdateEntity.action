@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "CanteenSet",
+		"Service": "/BlogMDKDemoApp/Services/openSAPNewService.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"CanteenID": "#Control:CanteenID/#Value",
+	"Location": "#Control:Location/#Value",
+	"Name": "#Control:Name/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/BlogMDKDemoApp/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/BlogMDKDemoApp/Actions/UpdateEntityFailureMessage.action"
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <Resource id="jdbc/DefaultDB" provider="xs.openejb:XS Default JDBC Database" type="javax.sql.DataSource">
+        service = sampleDB
+        maxActive = 100
+        testOnBorrow = true
+        validationQuery = select 1
+    </Resource>
+</resources>

@@ -1,0 +1,6 @@
+{
+	"ModalPage": true,
+	"NavigationType": "Cross",
+	"PageToOpen": "/ChefsDelight/Pages/MenuSet_Create_2.page",
+	"_Type": "Action.Type.Navigation"
+}

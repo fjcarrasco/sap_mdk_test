@@ -1,0 +1,21 @@
+{
+	"Service": "/ChefsDelight/Services/canteenService.service",
+	"DefiningRequests": [
+	{
+		"Name": "CanteenSet",
+		"Query": "CanteenSet"
+	},
+	{
+		"Name": "MenuSet",
+		"Query": "MenuSet"
+	}
+],
+	"_Type": "Action.Type.ODataService.Initialize",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnSuccess": "/ChefsDelight/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"OnFailure": "/ChefsDelight/Actions/Service/InitializeOfflineFailureMessage.action"
+}

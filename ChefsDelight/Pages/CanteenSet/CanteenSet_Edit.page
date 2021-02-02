@@ -1,0 +1,43 @@
+{
+	"Caption": "Update Canteen",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/ChefsDelight/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/ChefsDelight/Actions/CanteenSet/CanteenSet_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "CanteenID",
+		"_Name": "CanteenID",
+		"Value": "{CanteenID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Location",
+		"_Name": "Location",
+		"Value": "{Location}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Name",
+		"_Name": "Name",
+		"Value": "{Name}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "CanteenSet_Edit"
+}

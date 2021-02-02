@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/BlogMDKDemoApp/Pages/MenuSet/MenuSet_Create.page",
+	"_Type": "Action.Type.Navigation"
+}

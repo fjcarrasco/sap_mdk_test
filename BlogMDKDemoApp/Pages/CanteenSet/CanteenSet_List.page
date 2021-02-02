@@ -1,0 +1,50 @@
+{
+	"Caption": "CanteenSet",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/BlogMDKDemoApp/Actions/CanteenSet/NavToCanteenSet_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{Location}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/BlogMDKDemoApp/Actions/CanteenSet/NavToCanteenSet_Detail.action",
+				"StatusImage": "",
+				"Title": "{CanteenID}",
+				"Footnote": "",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "",
+				"Subhead": "{Name}",
+				"SubstatusText": ""
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "CanteenSet",
+				"Service": "/BlogMDKDemoApp/Services/openSAPNewService.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "CanteenSet_List"
+}

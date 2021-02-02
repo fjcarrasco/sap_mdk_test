@@ -1,0 +1,58 @@
+{
+	"Caption": "CanteenSet Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/BlogMDKDemoApp/Actions/CanteenSet/NavToCanteenSet_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/BlogMDKDemoApp/Rules/CanteenSet/CanteenSet_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{CanteenID}",
+				"Subhead": "{Name}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "",
+				"Description": "{Location}",
+				"StatusText": "",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": ""
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "CanteenID",
+		"Value": "{CanteenID}"
+	},
+	{
+		"KeyName": "Location",
+		"Value": "{Location}"
+	},
+	{
+		"KeyName": "Name",
+		"Value": "{Name}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "CanteenSet_Detail"
+}

@@ -1,0 +1,13 @@
+{
+	"Target": {
+		"EntitySet": "CanteenSet",
+		"Service": "/ChefsDelight/Services/canteenService.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"OnSuccess": "/ChefsDelight/Actions/DeleteEntitySuccessMessage.action",
+	"OnFailure": "/ChefsDelight/Actions/DeleteEntityFailureMessage.action",
+	"ActionResult": {
+		"_Name": "delete"
+	},
+	"_Type": "Action.Type.ODataService.DeleteEntity"
+}
